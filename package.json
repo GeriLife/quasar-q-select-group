@@ -9,13 +9,7 @@
   "author": "Shailee Mehta",
   "license": "ISC",
   "dependencies": {
+    "vue": "^2.6.12",
     "quasar": "^1.12.13"
-  },
-  "devDependencies": {
-    "rollup": "^1.17.0",
-    "@rollup/plugin-buble": "^0.21.3",
-    "@rollup/plugin-commonjs": "^11.1.0",
-    "rollup-plugin-vue": "^5.0.1",
-    "vue": "^2.6.12"
   }
 }
