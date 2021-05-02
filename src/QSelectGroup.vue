@@ -19,15 +19,19 @@
     option-value="value"
     option-label="label"
   >
-   <!-- Pass on all named slots -->
-      <template v-for="slot in Object.keys($slots)" :slot="slot">
-        <slot :name="slot" />
-      </template>
+    <!-- Pass on all named slots -->
+    <template v-for="slot in Object.keys($slots)" :slot="slot">
+      <slot :name="slot" />
+    </template>
 
-      <!-- Pass on all scoped slots -->
-      <template v-for="slot in Object.keys($scopedSlots)" :slot="slot" slot-scope="scope">
-        <slot :name="slot" v-bind="scope" />
-      </template>
+    <!-- Pass on all scoped slots -->
+    <template
+      v-for="slot in Object.keys($scopedSlots)"
+      :slot="slot"
+      slot-scope="scope"
+    >
+      <slot :name="slot" v-bind="scope" />
+    </template>
 
     <template v-slot:option="scope">
       <q-item
@@ -61,8 +65,8 @@
   </q-select>
 </template>
 <script>
-
 export default {
+  name: "q-select-group",
   props: {
     stringOptions: { required: true, type: Array },
     model: { default: null, type: [Array, Object, String] },
