@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shailee Mehta",
-  "license": "ISC",
   "dependencies": {
     "vue": "^2.6.12",
     "quasar": "^1.12.13"
-  }
+  },
+  "license": "Apache-2.0"
 }
