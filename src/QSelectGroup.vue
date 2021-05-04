@@ -65,6 +65,13 @@
   </q-select>
 </template>
 <script>
+import {
+  QSelect,
+  QItem,
+  QItemLabel,
+  QItemSection,
+} from "quasar/dist/quasar.umd.min.js";
+
 export default {
   name: "q-select-group",
   props: {
@@ -73,6 +80,8 @@ export default {
     multiple: { type: Boolean, default: false },
     disabled: { type: Boolean, default: false },
   },
+
+  components: { QSelect, QItem, QItemLabel, QItemSection },
 
   data() {
     return {

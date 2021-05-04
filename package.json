@@ -1,15 +1,53 @@
 {
-  "name": "q-select",
+  "name": "q-select-group",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "module": "./dist/q-select-group.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "Shailee Mehta",
   "dependencies": {
-    "vue": "^2.6.12",
-    "quasar": "^1.12.13"
+    "quasar": "^1.15.13",
+    "vue": "^2.6.12"
   },
-  "license": "Apache-2.0"
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "resolutions": {
+    "acorn": "npm:acorn-with-stage3"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@vue/cli-plugin-babel": "^4.5.12",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.6",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
