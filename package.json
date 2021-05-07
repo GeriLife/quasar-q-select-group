@@ -1,6 +1,6 @@
 {
-  "name": "q-select-group",
-  "version": "1.0.0",
+  "name": "@gerilife/q-select-group",
+  "version": "1.0.1",
   "description": "",
   "module": "./dist/q-select-group.js",
   "scripts": {
